@@ -2,8 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include "passengers.h"
-#include "queque_list.h"
 #include <readline/readline.h>
+#ifdef LIST
+#include "queque_list.h"
+#else
+#include "queque_vector.h"
+#endif
+#include "queque.h"
 
 int get_int() {
         char *input = readline("");
