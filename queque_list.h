@@ -13,11 +13,4 @@ typedef struct queque {
         int count;
 } queque;
 
-void *identificare(int n);
-int push(queque *arr, passengers add);
-passengers pop(queque *arr);
-int clean(queque *arr);
-int cmp(queque *arr);
-int first_raw(queque *arr);
-
 #endif
